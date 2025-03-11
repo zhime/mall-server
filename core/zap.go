@@ -5,6 +5,7 @@ import (
 	"github.com/zhime/mall-server/core/internal"
 	"github.com/zhime/mall-server/global"
 	"github.com/zhime/mall-server/utils"
+	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 	"os"
 )
