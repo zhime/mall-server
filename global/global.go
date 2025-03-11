@@ -7,5 +7,5 @@ import (
 
 var (
 	MS_VP     *viper.Viper
-	MS_CONFIG config.Server
+	MS_CONFIG *config.Server
 )
