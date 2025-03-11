@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"github.com/zhime/mall-server/core"
+	"github.com/zhime/mall-server/global"
+)
 
 func main() {
-	fmt.Println("mall-server")
+	global.MS_VP = core.Viper()
+
 }
