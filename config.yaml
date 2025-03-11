@@ -47,7 +47,7 @@ zap:
   level: info
   format: console
   prefix: "[github.com/zhime/mall-server]"
-  director: log
+  director: logs
   show-line: true
   encode-level: LowercaseColorLevelEncoder
   stacktrace-key: stacktrace
