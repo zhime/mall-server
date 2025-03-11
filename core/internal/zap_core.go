@@ -5,7 +5,6 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 	"os"
-	"time"
 )
 
 type ZapCore struct {
@@ -28,7 +27,8 @@ func (z *ZapCore) WriteSyncer(formats ...string) zapcore.WriteSyncer {
 		global.MS_CONFIG.Zap.Director,
 		z.level.String(),
 		global.MS_CONFIG.Zap.RetentionDay,
-		CutterWithLayout(time.DateOnly),
+		//CutterWithLayout(time.DateOnly),
+		CutterWithLayout("2006-01-02"),
 		CutterWithFormats(formats...),
 	)
 	if global.MS_CONFIG.Zap.LogInConsole {

@@ -31,8 +31,5 @@ func Viper() *viper.Viper {
 	if err = v.Unmarshal(&global.MS_CONFIG); err != nil {
 		panic(err)
 	}
-	//
-	//// root 适配性 根据root位置去找到对应迁移位置,保证root路径有效
-	//global.GVA_CONFIG.AutoCode.Root, _ = filepath.Abs("..")
 	return v
 }
